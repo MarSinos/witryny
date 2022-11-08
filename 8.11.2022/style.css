@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: hsla(0, 0%, 80%, 0.9);
+    font-size: 2rem;
+}
+input{
+    font-size: 2rem;
+    text-align: center;
+    width: 25%;
+}
