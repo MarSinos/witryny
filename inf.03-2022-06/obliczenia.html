@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Stacja paliw</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <div class="baner">
+        <h1>Całodobowa stacja paliw</h1>
+    </div>
+    <div class="menu">
+        <a href="stacja.html"><img src="home.png"></a>
+        <a href="obliczenia.html"><img src="znak.png"></a>
+        <a href="kwerendy.txt">Pobierz dokumenty</a>
+    </div>
+    <div class="lewy">
+        <form action="" method="post">
+            <h2>Orientacyjny koszt paliwa</h2>
+            1-benzyna, 2-olej napędowy<br>
+            <input type="number" id="rodzaj"><br>
+            Ile litrów?<br>
+            <input type="number" id="ile"><br>
+            <input type="button" value="OBLICZ" onclick="paliwko()">
+        </form>
+        <p id="wyswietlacz"></p>
+        <script>
+        function paliwko() {
+            let rodzaj = document.getElementById("rodzaj").value*1;
+            let ile = document.getElementById("ile").value*1;
+            let wynik;
+            const wyswietlacz = document.getElementById("wyswietlacz");
+            if (rodzaj==1) {
+                wynik = ile*4;
+            }
+            else if (rodzaj==2) {
+                wynik = ile*3.5;
+            }
+            else{
+                wynik = 0;
+            }
+            wyswietlacz.innerText = wynik;
+        }
+        </script>
+    </div>
+    <div class="prawy">
+        <img src="samochod.png" alt="samochód" id="samochod">
+    </div>
+    <div class="stopka">
+        <p>Stronę opracował: 2137</p>
+    </div>
+</body>
+</html>
