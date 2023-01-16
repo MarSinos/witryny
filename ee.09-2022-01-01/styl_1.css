@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Georgia;
+}
+.baner{
+    background-color: DodgerBlue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.glowny{
+    background-color: LightBlue;
+    padding: 100px;
+}
+.lewy{
+    background-color: dodgerblue;
+    color: white;
+    width: 20%;
+    height: 220px;
+    float: left;
+}
+.srodek, .prawy{
+    background-color: dodgerblue;
+    color: white;
+    width: 40%;
+    height: 220px;
+    text-align: center;
+    /* float: left; */
+}
+.srodek{
+    float: left;
+}
+ .prawy{
+    float: left;
+}
+#odnosnik{
+    border-style: double;
+    border-width: 1px;
+    border-color: dimgray;
+    background-color: gold;
+    color: darkred;
+    padding: 10px;
+}

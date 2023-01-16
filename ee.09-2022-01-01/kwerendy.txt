@@ -1,0 +1,7 @@
+INSERT INTO `wedkowanie`.`karty_wedkarskie`(`id`, `imie`, `nazwisko`, `adres`, `data_zezwolenia`, `punkty`) VALUES (NULL, 'Grzegorz','Niemczyk','Gdynia, Batorego 14/5','2018-02-23','0');
+
+SELECT imie, nazwisko FROM `wedkowanie`.`karty_wedkarskie` WHERE `punkty`>20;
+
+SELECT `lowisko`.`akwen` FROM `wedkowanie`.`akwen` INNER JOIN `wedkowanie`.`zawody_wedkarskie` ON `akwen`.`Lowisko_id` = `lowisko`.`id` WHERE `zawody_wedkarskie`.`sedzia` = "Krzysztof Dobrowoslki";
+
+CREATE USER IF NOT EXIST "anna"@"localhost" identified by "anna123";
