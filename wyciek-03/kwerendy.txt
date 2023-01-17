@@ -1,0 +1,7 @@
+1. SELECT `nazwa`, `ulica` FROM `kwiaciarnia`.`kwiaciarnie` WHERE `miasto` = "malbork"; 
+
+2. SELECT `kwiaciarnie`.`id_kwiaciarni`, COUNT(`zamowienia`.`id_zam`) FROM `kwiaciarnia`.`kwiaciarnie` INNER JOIN `kwiaciarnia`.`zamowienia` ON `kwiaciarnie`.`id_kwiaciarni` = `zamowienia`.`id_kwiaciarni`; 
+
+3. SELECT `kwiaciarnie`.`nazwa`, `kwiaciarnie`.`miasto`, `zamowienia`.`kwiaty` FROM `kwiaciarnia`.`kwiaciarnie` INNER JOIN `kwiaciarnia`.`zamowienia` ON `kwiaciarnie`.`id_kwiaciarni`= `zamowienia`.`id_kwiaciarni` WHERE `data` = "2017-01-07";
+
+4.CREATE TABLE `kwiaciarnia`.`klienci` (`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY, `imie` TEXT, `nazwisko` TEXT, `rabat` DECIMAL);
