@@ -1,0 +1,7 @@
+1. SELECT * FROM `prognoza`.`pogoda` WHERE `miasta_id` = "1" ORDER BY `data_prognozy`; 
+
+2. SELECT `id`, `data_prognozy` FROM `prognoza`.`pogoda` WHERE `opady`>30; 
+
+3. SELECT `pogoda`.`data_prognozy`, `pogoda`.`temperatura_noc`, `miasta`.`nazwa` FROM `prognoza`.`pogoda` INNER JOIN `prognoza`.`miasta` ON `pogoda`.`miasta_id` = `miasta`.`id` WHERE `temperatura_noc`<6; 
+
+4. ALTER TABLE `miasta` ADD `wojewodztwo` TEXT AFTER `nazwa`;
