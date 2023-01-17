@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.header{
+    height: 150px;
+    padding-top: 30px;
+    width: 90%;
+    float: left;
+    background-color: red;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.zdjecie{
+    height: 150px;
+    width: 10%;
+    float: left;
+    background-color: black;
+}
+.middle{
+    float: left;
+    height: 50px;
+    width: 100%;
+    background-color: orange;
+    text-align: center;
+}
+.panel_lewy{
+    padding-top: 25px;
+    float: left;
+    width: 30%;
+    height: 500px;
+    background-color: grey;
+    text-align: center;
+}
+.panel_prawy{
+    padding-top: 20px;
+    float: left;
+    padding-left: 50px;
+    height: 500px;
+    width: 70%;
+    background-color: green;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    text-align: right;
+    clear: both;
+    background-color: aqua;
+    padding-right: 35px;
+}

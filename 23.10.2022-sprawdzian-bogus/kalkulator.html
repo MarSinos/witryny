@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h3>Profesjonalny kalkulator</h3>
+            </div>
+        <div class="zdjecie">
+        <img src="anime.png" alt="anime" width="200px">
+            </div>
+<div class="middle">
+   <p> 
+    <a href="strona.html">Start</a>
+    <a href="kalkulator.html">Kalkulator</a>
+    <a href="informacje.html">Informacje</a>
+</p>
+  </div> 
+    <div class="panel_lewy">
+        Pobierz: <br>
+<ol>
+<li><a href="style.css" download>CSS</a></li>
+<li><a href="informacje.html" download>Skrypt</a></li>
+</ol>
+    </div>
+    <div class="panel_prawy">
+<!--x <input type="number" id="x">
+y <input type="number" id="y">
+<input type="button" value="+" onclick="fun(0)">
+<input type="button" value="-" onclick="fun(1)">
+<input type="button" value="*" onclick="fun(2)">
+<input type="button" value="/" onclick="fun(3)">
+<p id="wyswietlacz">Tu będzie twój wynik: </p> -->
+x <input type="number" id="x">
+y <input type="number" id="y">
+<input type="button" value="+" onclick="dodaj()">
+<input type="button" value="-" onclick="odejmij()">
+<input type="button" value="*" onclick="pomnoz()">
+<input type="button" value="/" onclick="podziel()">
+<p id="wyswietlacz">Tu będzie twój wynik</p>
+<script>
+        //     function dodaj() {
+        //     const x = document.getElementById("x").value*1;
+        //     const y = document.getElementById("y").value*1;
+        //     const wyswietlacz = document.getElementById("wyswietlacz");
+        //     let temp = (x+y);
+        //     console.log(wyswietlacz);
+        //     wyswietlacz.innerText = "Wynik: " + temp;
+        //     if (temp==0) {
+        //         wyswietlacz.style.backgroundColor = "cornflowerblue";
+        //         wyswietlacz.style.fontFamily = "Comic Sans Ms";
+        //     } else{
+        //         if (temp>0) {
+        //             wyswietlacz.style.backgroundColor = "lime";
+        //         } else {
+        //             wyswietlacz.style.backgroundColor = "rgb(255,100,100)";
+        //         }
+        //     }
+        // }
+        // function odejmij() {
+        //     const x = document.getElementById("x").value*1;
+        //     const y = document.getElementById("y").value*1;
+        //     const wyswietlacz = document.getElementById("wyswietlacz");
+        //     wyswietlacz.innerText = "twój wynik to: " +  (x-y);
+        // }
+        // function pomnoz() {
+        //     const x = document.getElementById("x").value;
+        //     const y = document.getElementById("y").value;
+        //     const wyswietlacz = document.getElementById("wyswietlacz");
+        //     wyswietlacz.innerText = "twój wynik to: " + (x*y);
+        // }
+        // function podziel() {
+        //     const x = document.getElementById("x").value;
+        //     const y = document.getElementById("y").value;
+        //     const wyswietlacz = document.getElementById("wyswietlacz");
+        //     wyswietlacz.innerText = "twój wynik to: " + (x/y);
+        // }
+
+
+function dodaj(){
+   const x = document.getElementById("x").value*1;
+   const y = document.getElementById("y").value*1;
+   const wyswietlacz = document.getElementById("wyswietlacz");
+    wyswietlacz.innerText = "Twój wynik to: " + (x+y);
+}
+function odejmij(){
+   const x = document.getElementById("x").value*1;
+   const y = document.getElementById("y").value*1;
+   const wyswietlacz = document.getElementById("wyswietlacz");
+    wyswietlacz.innerText = "Twój wynik to: " + (x-y);
+}
+function pomnoz(){
+   const x = document.getElementById("x").value*1;
+   const y = document.getElementById("y").value*1;
+   const wyswietlacz = document.getElementById("wyswietlacz");
+    wyswietlacz.innerText = "Twój wynik to: " + (x*y);
+}
+function podziel(){
+   const x = document.getElementById("x").value*1;
+   const y = document.getElementById("y").value*1;
+   const wyswietlacz = document.getElementById("wyswietlacz");
+    wyswietlacz.innerText = "Twój wynik to: " + (x/y);
+}
+
+
+//const wyswietlacz = document.getElementById("wyswietlacz");
+//function fun(a, b, c) {
+//    console.log(a);
+//    
+//    switch (a) {
+//        case 0: wyswietlacz.innerHTML = "dodawanie"; break;
+//        case 1: wyswietlacz.innerHTML = "odejmowanie"; break;
+//        case 2: wyswietlacz.innerHTML = "mnożenie"; break;
+//        case 3: wyswietlacz.innerHTML = "dzielenie"; break;
+//
+//            default: wyswietlacz.innerHTML = "Podaj dane i wybierz działąnie"; break;
+//    }
+// }
+// function dodaj(){
+//    const x = Number(document.getElementById("x").value*1);
+//    let temp = x+y;
+//    wyswietlacz.innerText = "Wynik: " +temp;
+//    if (temp == 0) {
+//        wyswietlacz.style.backgroundColor = "cornglowerblue";
+//        wyswietlacz.style.fontFamily = "Comic Sans Ms";
+//    } else {
+//       if(temp > 0) {
+//            wyswietlacz.style.backgroundColor = "lime";
+//        } else {
+//            wyswietlacz.style.backgroundColor = "rgb(255,100,100";
+//        }
+//   }
+// }
+</script>
+    </div>
+    <div class="footer">
+        <p> XYZ</p>
+    </div>
+</body>
+</html>
